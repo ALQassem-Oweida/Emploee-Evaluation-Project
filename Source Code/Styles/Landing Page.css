@@ -68,19 +68,19 @@ position: absolute;
 	position: relative;
 	height: 100%;
 	width:100%;
-	background: url('img/professianal.jpg');
+	background: url('../img/professianal.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
-	background: url('img/technicall.jpg');
+	background: url('../img/technicall.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
-	background: url('img/personal1.jpg');
+	background: url('../img/personal1.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;

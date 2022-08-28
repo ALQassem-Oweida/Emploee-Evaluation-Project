@@ -40,6 +40,7 @@ body {
   margin: auto;
   margin-top: 2px;
   padding: 15px;
+  font-size: medium;
 }
 
 #UserName {
@@ -88,19 +89,20 @@ option {
 }
 
 #EmployeData {
+
   margin: auto;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  display: block;
   width: 100%;
   height: 200px;
   /* background-color:  #00d5ff30; */
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: 1fr 1fr 1fr;
-  
   box-shadow: rgba(3,210,248, 0.1) 0px 1px 1px 0px inset, rgba(3,210,248, 0.25) 0px 50px 100px -20px, rgba(3,210,248, 0.4) 0px 30px 60px -30px;
+  display: none;
+  border: 2px solid black;
 }
 
 #userPic {
@@ -114,10 +116,11 @@ option {
 }
 
 #Em1 {
+  margin-top:30px;
   grid-row: 1/4;
   grid-column: 2/3;
   color: black;
-  border-left: 2px dotted black;
+  /* border-left: 2px dotted black; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -156,10 +159,6 @@ option {
   font-size: 16px;
   margin-top: 30px;
 }
-#Start-Evaluation:hover{
-  background-color: #00d3f8;
-  border: none;
-}
 
 /* ******************************************************* Form Section Start  *********************************************************************************** */
 #formSection {
@@ -189,15 +188,17 @@ option {
 }
 
 .Section-Name {
-  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
   /* border:2px dotted black; */
-  margin-left: 3.5%;
   color: white;
   background-color: #03D2F8;
   padding: 15px;
 }
 
 .Qustion {
+  margin-top: 1%;
   margin-left: 40px;
 
 }
@@ -224,6 +225,7 @@ label{
   font-weight: bold;
   border-radius: 10px;
   padding: 20px;
+
 }
 
 #Sub:hover {
@@ -236,6 +238,7 @@ label{
 /* ********************************************************** Footer Start  *********************************************************************************** */
 footer {
   width: 100%;
+  margin-top: 10%;
 
 }
 
@@ -296,6 +299,7 @@ label{
 
 #Sub {
   margin-top: 4%;
+
 
 }
 .Qustion {
@@ -368,3 +372,4 @@ label{
   }
 
 }
+

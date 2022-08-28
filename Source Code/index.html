@@ -8,38 +8,9 @@
 	<!-- bootstrap icons cdn -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<!-- style.css -->
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="./Styles/Landing Page.css"/>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<style>
-		html {
-			width: 100%;
-			min-height: 100%;
-		}
 
-		body {
-			background-color: rgb(240, 240, 240);
-			display: relative;
-			min-height: 100vh;
-		}
-
-		.cookie {
-			width: 400px;
-			padding: 25px;
-			background-color: rgb(30, 30, 30);
-			color: white;
-			position: fixed;
-			bottom: 25px;
-			left: 25px;
-			box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
-			z-index: 999;
-		}
-
-		button {
-			width: 100%;
-			height: 40px;
-			margin-top: 20px;
-		}
-	</style>
 	
 </head>
 
@@ -61,12 +32,7 @@
 		</div>
 			<!-- slider banner / bootstrap	 -->
 
-			<div class="cookie">
-				<h1>Cookie, anyone?</h1>
-				<p>PerformYard uses cookies to track visits to this website, it stores no personal details. It doesn't
-					contain chocolate chips or any other special ingredient. Sorry!</p>
-				<button onclick="setCookie()">Got it!</button>
-			</div>
+		
 
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			  <ol class="carousel-indicators">
@@ -148,46 +114,7 @@
 	<!-- bootstrap javascript cdn -->
 	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<!-- log in storage -->
-	<script >
-		function loginUser() {
-		   let key = false;
-		   let uIndex = null;
-		   let formData = JSON.parse(localStorage.getItem('formData')) || [];
-   
-		   formData.forEach((element,arrayIndex) => {
-			 if(element.mail==email.value){
-			   key = true;
-			   uIndex = arrayIndex;
-			 }
-		   });
-   
-		   if (key && formData[uIndex].pass==password.value) {
-			 sessionStorage.mail = formData[uIndex].mail;
-			 sessionStorage.pass =formData[uIndex].pass;
-			 sessionStorage.name =formData[uIndex].name;
+	<script src="./Js Script/ScriptAll.js"></script>
 
-		   }else if(key && formData[uIndex].pass !==password.value){
-			
-			 alert("Wrong password Please try again");
-			 return false;
-			
-		   }else if(!key){
-			
-			 alert("Account not found Sign up please");
-			 return false;
-			 
-		   }else{
-			 console.log("hey!");
-		   }
-		  
-	 }
-	  </script> 
-	  <script>
-		function setCookie() {
-			console.log('set browser cookie');
-			document.querySelector('.cookie').style.display = 'none';
-		}
-	</script>
-	 
 </body>
 </html>
