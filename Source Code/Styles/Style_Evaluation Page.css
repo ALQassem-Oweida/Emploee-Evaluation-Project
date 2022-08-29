@@ -59,15 +59,19 @@ body {
   width: 80%;
 }
 
+
+
+/* ******************************************************* Employee info Start  *********************************************************************************** */
 #namesLable {
+  margin-top: 12.8%;
   font-weight: bolder;
-  width: 100%;
+  width: 90%;
   font-size: 30px;
 }
 
-/* ******************************************************* Employee info Start  *********************************************************************************** */
 #EmployeList {
-  width: 100%;
+  margin: auto;
+  width: 90%;
  
 }
 
@@ -78,7 +82,10 @@ body {
   border-color: rgb(0, 0, 0);
   font-weight: bolder;
   font-size: 20px;
- padding: 20px;
+  padding: 20px;
+  border: 2px solid black;
+
+
 }
 
 option {
@@ -94,29 +101,30 @@ option {
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  width: 100%;
+  width: 90%;
   height: 200px;
   /* background-color:  #00d5ff30; */
   display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   box-shadow: rgba(3,210,248, 0.1) 0px 1px 1px 0px inset, rgba(3,210,248, 0.25) 0px 50px 100px -20px, rgba(3,210,248, 0.4) 0px 30px 60px -30px;
   display: none;
   border: 2px solid black;
+
 }
 
 #userPic {
-  grid-row: 1/4;
+  grid-row: 1/6;
   grid-column: 1/2;
   border-radius: 50%;
-  height: 60%;
+  height: 90%;
   width: 45%;
-  margin-left: 30%;
+  margin: auto;
 
 }
 
 #Em1 {
-  margin-top:30px;
+
   grid-row: 1/4;
   grid-column: 2/3;
   color: black;
@@ -132,8 +140,6 @@ option {
   display: flex;
   align-items: center;
 
-
-
 }
 
 .info-title {
@@ -146,7 +152,7 @@ option {
   background-color: white;
   margin-left: 10%;
   width: 40%;
-  padding: 5px;
+  /* padding: 5px; */
   text-align: center;
 
 }
@@ -154,10 +160,18 @@ option {
 /* ******************************************************* Employee info End  *********************************************************************************** */
 
 #Start-Evaluation {
-  margin-bottom: 13%;
+  /* margin-bottom: 13%; */
+  background-color: rgb(0, 174, 255);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
   padding: 15px;
   font-size: 16px;
   margin-top: 30px;
+  border: none;
+}
+#Start-Evaluation:hover {
+  background-color: #333;
 }
 
 /* ******************************************************* Form Section Start  *********************************************************************************** */
@@ -219,12 +233,15 @@ label{
 
 #Sub {
   margin-top: 7%;
-  width: 150px;
-  height: 3%;
+  width: 250px;
+  height: 2%;
   font-size: 1.2rem;
   font-weight: bold;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.407);
+
 
 }
 

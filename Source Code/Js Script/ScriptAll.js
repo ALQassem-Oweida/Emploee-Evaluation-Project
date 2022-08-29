@@ -36,6 +36,7 @@ Department: ["Enginering","It Department","It Department","Human Resources","Eng
 function getinfo() {
   let userName=sessionStorage.getItem('name');
 document.getElementById("EmployeData").style.display= 'grid';
+document.getElementById("namesLable").style.marginTop= "0px";
  select = document.getElementById("EmployeSelector");
  employeeName = select.options[select.selectedIndex].value;
 
