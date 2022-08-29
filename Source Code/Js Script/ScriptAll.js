@@ -110,38 +110,42 @@ sessionStorage.clear();
 
 
 function loginUser() {
-    let key = false;
-    let uIndex = null;
-    let formData = JSON.parse(localStorage.getItem('formData')) || [];
-
-    formData.forEach((element,arrayIndex) => {
-      if(element.mail==email.value){
+  let key = false;
+let uIndex = null;
+let formData = JSON.parse(localStorage.getItem('formData')) || [];
+formData.forEach((element, arrayIndex) => {
+    if (element.mail == email.value) {
         key = true;
         uIndex = arrayIndex;
-      }
-    });
-
-    if (key && formData[uIndex].pass==password.value) {
-      sessionStorage.mail = formData[uIndex].mail;
-      sessionStorage.name =formData[uIndex].name;
-
-    }else if(key && formData[uIndex].pass !==password.value){
-     
-      alert("Wrong password Please try again");
-      return false;
-     
-    }else if(!key){
-     
-      alert("Account not found Sign up please");
-      return false;
-      
-    }else{
-      console.log("hey!");
     }
-   
+});
+
+if (key && formData[uIndex].pass == password.value) {
+
+
+    sessionStorage.mail = formData[uIndex].mail;
+
+    sessionStorage.name = formData[uIndex].name;
+
+    console.log("logged in successfuly ");
+
+} else if (key && formData[uIndex].pass !== password.value) {
+
+    document.getElementById("pass_err").innerHTML =
+  "Wrong password Please try again";
+    return false;
+
+} else if (!key) {
+
+    document.getElementById("email_err").innerHTML =
+  "Account not found Sign up please";
+    return false;
+
+} else {
+    console.log("hey!");
 }
 
-
+}
 
 
 
